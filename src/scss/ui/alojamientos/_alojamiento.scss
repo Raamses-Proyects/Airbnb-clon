@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alojamiento {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    @include m.telefono { 
+        margin-bottom: 0;
+    }
+
+    &__img {
+        width: 10rem;
+    }
+    &__texto {
+        margin: 0;
+    }
+}
